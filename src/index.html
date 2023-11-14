@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <title>Prehistoric World Museum</title>
+
+    <meta itemprop="name" content="Iguanodon — Learning">
+    <meta itemprop="description" content="Creative WebGL experiment with Three.js">
+    <meta itemprop="image" content="/social/share-1200x630.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Iguanodon — Learning">
+    <meta name="twitter:description" content="Creative WebGL experiment with Three.js">
+    <meta name="twitter:image" content="/social/share-1200x630.png">
+
+    <meta property="og:site_name" content="Iguanodon — Learning">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://iguanodon.vercel.app">
+    <meta property="og:title" content="Iguanodon — Learning">
+    <meta property="og:description" content="Creative WebGL experiment with Three.js">
+    <meta property="og:image" content="/social/share-1200x630.png">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas class="webgl"></canvas>
+    <div class="loading-bar"></div>
+    <script type="module" src="./script.js"></script>
+
+    <header>
+        <img class="logo" src="/images/iguanodon-transparent.png">
+    </header>
+
+    <audio id="myAudio">
+        <source src="/sound/iguanodon-sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="credits">
+        CREATED BY <a href="https://github.com/arifkhairul" target="_blank">ARIF KHAIRUL</a>
+    </div>
+
+    <div>
+        <img onclick="playAudio()" class="sound" src="/images/sound-icon.png">
+    </div>
+
+    <script>
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.play();
+        }
+    </script>
+</body>
+</html>
